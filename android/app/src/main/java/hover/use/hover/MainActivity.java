@@ -27,8 +27,10 @@ public class MainActivity extends FlutterActivity {
             Log.e("MainActivity", "hover exception", e);
 
         }
+        
+        //add your action Id from dashboard 
         Intent i = new HoverParameters.Builder(this)
-                .request("86c3cc6f")
+                .request("action_id")
                 .extra("PhoneNumber", PhoneNumber)
                 .extra("Amount", amount)
                 .buildIntent();
